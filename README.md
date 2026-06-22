@@ -19,13 +19,13 @@ npm install
 Transcrever um arquivo de vídeo local:
 
 ```bash
-node src/cli.js caminho/do/video.mp4 --lang pt
+node transcribe.js caminho/do/video.mp4 --lang pt
 ```
 
 Transcrever a partir de uma URL do YouTube:
 
 ```bash
-node src/cli.js https://youtube.com/watch?v=... --lang pt
+node transcribe.js https://youtube.com/watch?v=... --lang pt
 ```
 
 ### Opções

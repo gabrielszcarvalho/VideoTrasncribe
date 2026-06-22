@@ -3,12 +3,12 @@ import { Command } from "commander";
 import path from "node:path";
 import fs from "node:fs/promises";
 import { nodewhisper } from "nodejs-whisper";
-import { isUrl, downloadVideo } from "./download.js";
+import { isUrl, downloadVideo } from "./src/download.js";
 
 const program = new Command();
 
 program
-  .name("transcrever")
+  .name("transcribe")
   .description("Transcreve vídeos localmente (offline) usando whisper.cpp")
   .argument("<entrada>", "Caminho do arquivo de vídeo ou URL do YouTube")
   .option("-m, --model <modelo>", "Modelo do whisper (tiny, base, small, medium, large)", "base")

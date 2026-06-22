@@ -4,10 +4,10 @@
   "description": "CLI para transcrever vídeos localmente (offline) usando whisper.cpp",
   "type": "module",
   "bin": {
-    "transcrever": "./src/cli.js"
+    "transcrever": "./transcribe.js"
   },
   "scripts": {
-    "start": "node src/cli.js"
+    "start": "node transcribe.js"
   },
   "license": "UNLICENSED",
   "dependencies": {
