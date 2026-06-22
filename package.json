@@ -1,0 +1,18 @@
+{
+  "name": "transcrever",
+  "version": "1.0.0",
+  "description": "CLI para transcrever vídeos localmente (offline) usando whisper.cpp",
+  "type": "module",
+  "bin": {
+    "transcrever": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "nodejs-whisper": "^0.3.0",
+    "ytdl-core": "^4.11.5"
+  }
+}
