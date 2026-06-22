@@ -6,8 +6,8 @@ import ytdl from "ytdl-core";
 
 export function isUrl(input) {
   try {
-    new URL(input);
-    return true;
+    const { protocol } = new URL(input);
+    return protocol === "http:" || protocol === "https:";
   } catch {
     return false;
   }
